@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MailSentra | Multi-Modal Email Threat Intelligence & Steganography Defense</title>
+  <meta name="description" content="AI-powered multi-modal email security platform. Natural language threat classification, deep convolutional image steganalysis, and policy-driven defense delivered natively in Mozilla Thunderbird.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Schibsted+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="icon" type="image/png" href="assets/icon32.png">
+</head>
+<body>
+
+  <!-- Top Glass Navigation -->
+  <header class="product-header">
+    <div class="site-wrap header-inner">
+      <a href="index.html" class="brand-badge">
+        <div class="logo-cube">M</div>
+        <div>
+          <div class="brand-title">MailSentra<span>.ai</span></div>
+          <div class="brand-desc">Enterprise Email Shield</div>
+        </div>
+      </a>
+
+      <nav class="product-nav">
+        <a href="#features">Capabilities</a>
+        <a href="#simulator">Live Simulator</a>
+        <a href="../index.html" class="btn-pill btn-ghost">Academic Portal ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero-section">
+    <div class="site-wrap">
+      <div class="hero-pill">
+        <span>⚡</span> Next-Gen Multi-Modal Threat Detection & Policy Defense
+      </div>
+      <h1 class="hero-heading">
+        Stop Sophisticated Attacks<br>Hidden in Plain Sight.
+      </h1>
+      <p class="hero-subheading">
+        The first email security engine that correlates transformer-based NLP, deep convolutional image steganalysis, and declarative defense policies into real-time, explainable triage inside Mozilla Thunderbird.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#simulator" class="btn-pill btn-cyan" style="padding: 0.85rem 1.8rem; font-size: 1rem;">
+          Try Live Attack Simulator ↓
+        </a>
+        <a href="../index.html#domain" class="btn-pill btn-ghost" style="padding: 0.85rem 1.8rem; font-size: 1rem;">
+          View Research Architecture ↗
+        </a>
+      </div>
+
+      <!-- Interactive Mockup & Console Preview -->
+      <div id="simulator" class="mockup-window">
+        <div class="window-topbar">
+          <div class="window-dots">
+            <div class="window-dot red"></div>
+            <div class="window-dot yellow"></div>
+            <div class="window-dot green"></div>
+          </div>
+          <div class="window-title">MailSentra Unified Client Inspection Console — Thunderbird Add-on & Gateway Feed</div>
+          <div style="width: 48px;"></div>
+        </div>
+
+        <!-- Scenario Selector Buttons -->
+        <div style="background: rgba(14, 21, 38, 0.7); padding: 1rem 1.5rem; border-bottom: 1px solid var(--glass-border);">
+          <div class="scenario-buttons" style="margin-bottom: 0;">
+            <button class="scenario-btn active" data-scenario="scenario4">⚡ Scenario 4: Stego Escalation</button>
+            <button class="scenario-btn" data-scenario="scenario2">⚠️ Scenario 2: Spear-Phishing</button>
+            <button class="scenario-btn" data-scenario="scenario1">✓ Scenario 1: Benign Mail</button>
+            <button class="scenario-btn" data-scenario="scenario5">💥 Scenario 5: Combined Attack</button>
+            <button class="scenario-btn" data-scenario="scenario7">🛡 Scenario 7: Corrupted Attachment</button>
+          </div>
+        </div>
+
+        <div class="console-body">
+          <!-- Left: In-Client Mail & Banner Mockup -->
+          <div class="email-preview-pane">
+            <!-- Simulated In-Message MailSentra Banner -->
+            <div id="simBanner" class="warning-banner-mock rose">
+              <div class="banner-headline">
+                <span>🛡</span> <span id="simHeadline">Covert Payload Detected in Image Attachment</span>
+              </div>
+              <div id="simSub" class="banner-sub">
+                Steganography Analysis: EfficientNet-B2 flagged high-frequency spatial payload (Probability: 91.91%). Defense posture escalated.
+              </div>
+            </div>
+
+            <!-- Email Message Header -->
+            <div class="email-header-row">
+              <div><strong>Subject:</strong> <span id="simSubject">Fwd: Updated Q4 Marketing Strategy Asset</span></div>
+              <div style="margin-top: 0.35rem;"><strong>From:</strong> <span id="simFrom">colleague.design@partner-agency.com</span></div>
+              <div style="margin-top: 0.35rem;"><strong>Authentication:</strong> <span style="color: var(--green);">SPF PASS • DKIM PASS • DMARC VERIFIED</span></div>
+            </div>
+
+            <!-- Email Body Content -->
+            <div id="simBody" style="font-size: 0.95rem; line-height: 1.6; color: #e2e8f0; margin-bottom: 1.5rem;">
+              Hi team, please find attached the high-resolution logo banner for the upcoming regional product launch. Let me know if you need SVG vectors.
+            </div>
+
+            <!-- Attachment Area -->
+            <div id="simAttachmentArea" style="background: rgba(0,0,0,0.3); border: 1px dashed var(--rule); border-radius: 8px; padding: 1rem;">
+              <div style="font-size: 0.75rem; font-family: var(--mono); color: var(--graphite); margin-bottom: 0.5rem;">
+                IMAGE ATTACHMENT INSPECTED (Grad-CAM Spatial Layer)
+              </div>
+              <div style="display: flex; gap: 1rem; align-items: center;">
+                <img id="simImage" src="assets/stego_image.png" alt="Inspected Attachment" style="width: 80px; height: 80px; object-fit: cover; border-radius: 6px; border: 1px solid var(--rose);">
+                <div style="font-size: 0.85rem;">
+                  <strong style="color: #fff;">marketing_banner.png</strong>
+                  <div style="color: var(--cyan); font-family: var(--mono); font-size: 0.75rem;">SHA256: 7a9e14c... • 224x224 Scaled Tensor</div>
+                  <div style="color: var(--rose); font-size: 0.8rem; margin-top: 0.2rem;">● Steganographic Perturbations Flagged</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Security Operations Telemetry -->
+          <div class="telemetry-pane">
+            <div class="telemetry-item">
+              <div class="telemetry-label">Composite Risk Score</div>
+              <div id="simScore" class="telemetry-value" style="color: var(--cyan);">6 / 100</div>
+              <div style="font-size: 0.75rem; color: var(--graphite); margin-top: 0.2rem;">(NLP Text Baseline Score)</div>
+            </div>
+
+            <div class="telemetry-item">
+              <div class="telemetry-label">Defense Verdict & Posture</div>
+              <div id="simVerdict" class="telemetry-value" style="color: var(--rose);">THREAT_DETECTED</div>
+              <div id="simPosture" style="font-family: var(--mono); font-size: 0.85rem; color: var(--amber); margin-top: 0.2rem;">WARNING (Escalated)</div>
+            </div>
+
+            <div class="telemetry-item">
+              <div class="telemetry-label">Matched Policy Rule</div>
+              <div id="simRule" style="font-size: 0.95rem; font-weight: 600; color: #fff; margin-top: 0.25rem;">RULE-012 (Stego Attachment Confirmed)</div>
+              <div style="font-size: 0.75rem; color: var(--graphite);">c2-defense-policy v1.5.0</div>
+            </div>
+
+            <div class="telemetry-item">
+              <div class="telemetry-label">Image Steganalysis Probability</div>
+              <div id="simStego" class="telemetry-value" style="color: var(--rose);">91.91%</div>
+              <div style="font-size: 0.75rem; color: var(--graphite);">EfficientNet-B2 Transfer Backbone</div>
+            </div>
+
+            <div class="telemetry-item">
+              <div class="telemetry-label">End-to-End Pipeline Latency</div>
+              <div id="simLatency" class="telemetry-value" style="color: var(--green);">1006.9 ms</div>
+              <div style="font-size: 0.75rem; color: var(--graphite);">CPU-Only Real-time Execution</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Product Capabilities -->
+  <section id="features" class="features-section">
+    <div class="site-wrap">
+      <div class="section-head">
+        <div class="section-eyebrow">Enterprise-Grade Architecture</div>
+        <h2 class="section-h2">Designed for High-Assurance Email Defense</h2>
+        <p class="section-p">
+          By dismantling the technical silos between NLP threat categorization and computer vision steganalysis, MailSentra neutralizes attacks that conventional secure email gateways cannot see.
+        </p>
+      </div>
+
+      <div class="feature-cards">
+        <div class="feature-card">
+          <div class="feature-icon">✉</div>
+          <h3 class="feature-title">NLP Linguistic Triage (C1)</h3>
+          <p class="feature-desc">
+            Fine-tuned DistilBERT transformer models coupled with SPF/DKIM authentication verification, 226k+ malicious URL threat intel feeds, and stylometric AI text profiling.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">👁</div>
+          <h3 class="feature-title">Visual Steganalysis & Grad-CAM (C3)</h3>
+          <p class="feature-desc">
+            Deep convolutional neural networks (EfficientNet-B2) detect data hidden across pixel arrays, generating localized visual heatmaps to confirm payload carrier integrity.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">⚖</div>
+          <h3 class="feature-title">Declarative Defense Policy (C2)</h3>
+          <p class="feature-desc">
+            18-rule declarative decision engine mapping multi-modal evidence into calibrated postures (Informational to High Protection) without volatile neural fusion.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🛡</div>
+          <h3 class="feature-title">Never-Fail-Open Guarantee</h3>
+          <p class="feature-desc">
+            Zero speculative clean ratings. If attachment processing crashes or times out, the platform issues an explicit <code>partial</code> status with active warnings.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎓</div>
+          <h3 class="feature-title">Evidence-Grounded Awareness</h3>
+          <p class="feature-desc">
+            Generates contextual, plain-language explanations of threat mechanisms at the moment of reading, while tracking longitudinal employee vulnerability progression over time.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔌</div>
+          <h3 class="feature-title">Native Mail Client Extension</h3>
+          <p class="feature-desc">
+            Seamlessly integrated with Mozilla Thunderbird WebExtension standard, delivering immediate warnings and interactive Grad-CAM inspection panels in the user's workflow.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Footer -->
+  <footer class="product-footer">
+    <div class="site-wrap">
+      <div class="footer-top">
+        <div>
+          <div style="font-weight: 700; color: #fff; font-size: 1.2rem;">MailSentra Enterprise</div>
+          <p style="margin-top: 0.25rem;">Multi-Modal Email Threat Intelligence & Steganography Shield</p>
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="../index.html" style="color: var(--cyan); text-decoration: none;">Academic Research Portal ↗</a>
+        </div>
+      </div>
+      <div style="border-top: 1px solid var(--rule); padding-top: 1.5rem; text-align: center; font-size: 0.8rem;">
+        © 2026 MailSentra Research Group. All models and integration contracts empirically verified.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/product.js"></script>
+</body>
+</html>
